@@ -43,7 +43,7 @@ solve <- function(raw, top_n) {
 
 # Apply solution to some test data
 assertthat::are_equal(solve(c(1, 2, "", 3, 4, "", 5, 6), top_n = 1), 11)
-assertthat::are_equal(solve(c(7, 8, "", 9, 10, "", 11, 12), top_n = 1), 23)
+assertthat::are_equal(solve(c(7, 8, "", 9, 10, "", 11, 12), top_n = 3), 57)
 
 # Return the solution
 glue::glue("Solution to part 1: {solve(raw, 1)}")
